@@ -1,0 +1,30 @@
+/** @format */
+
+#wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 500px;
+  background-color: yellow;
+}
+#letter {
+  flex: 3 1 450px;
+  min-height: 500px;
+  background-color: bisque;
+  font-family: cursive;
+}
+button {
+  width: 120px;
+  height: 25px;
+  background-color: blanchedalmond;
+}
+#dashboard {
+  display: flex;
+  flex-direction: column;
+}
+.writersblock {
+  border: 3px dashed green;
+  margin: 13px;
+  padding: 3px;
+}
