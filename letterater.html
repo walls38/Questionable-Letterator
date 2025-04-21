@@ -1,0 +1,112 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Letterater</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script type="text/javascript" src="./lib/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="./js/letterator.js">
+      
+     
+    </script>
+  </head>
+
+  <body>
+    <h1>LetteraterPro, jQuery Edition</h1>
+    <div id="wrapper">
+      <div id="letter"></div>
+      <div id="dashboard">
+        <div class="writersblock">
+          <button id="id_setTitle" onclick="titleLetter()">Title Letter</button
+             <label for="titles">Greeting </label>
+                <select name="name_titles" id="id_titles">
+                <option value="Dear">Dear</option>
+                <option value="My Dear Friend">My Dear Friend</option>
+                <option value="My Friend">Friend</option>
+                <option value="Most Honourable">Most Honourable</option>
+                </select> 
+           
+            <label for="id_receiverName"> Name </label
+          ><input
+            type="text"
+            id="id_receiverName"
+            name="name_receiverName"
+            value=""
+            maxlength="25"
+            size="25"
+          />
+          </div>
+
+        <div class="writersblock">
+          <button id="id_createpara1" onclick="createParagraph()">Create</button
+          ><label for="paragraphNum"> Paragraph Number </label
+          ><input
+            type="text"
+            id="id_paragraphNumToCreate"
+            name="name_paragraphNumberToCreate"
+            value="1"
+            maxlength="1"
+            size="1"
+          /><br>
+          <label for="freeform">Enter the text for your paragraph:</label> or   <button id="id_randomfill" onclick="randomfillParagraph()">random fill</button
+          >
+            <br />
+
+            <textarea
+              id="id_freeform"
+              name="name_freeform"
+              rows="4"
+              cols="50"
+            >
+Enter text here...
+</textarea
+            >
+          </div>
+
+          <div class="writersblock">
+            <button id="changeAll" onclick="addSmiley(true)">Add Smiley Before</button><input
+            type="text"
+            id="id_smileybefore"
+            name="name_smileybefore"
+            value="1"
+            maxlength="1"
+            size="1"
+          /><br>
+              <button id="changeAll" onclick="addSmiley(false)">Add Smiley After</button><input
+            type="text"
+            id="id_smileyafter"
+            name="name_smileyafter"
+            value="1"
+            maxlength="1"
+            size="1"
+          />
+          </div>
+
+                  <div class="writersblock">
+          <button id="id_setBye" onclick="signOff()">Sign Off Letter</button
+             <label for="id_signoffs">Choose:</label>
+                <select name="name_signoffs" id="id_signoffs">
+                <option value="Yours">Yours</option>
+                <option value="Best">Best</option>
+                <option value="Kind Regards">Kind Regards</option>
+                <option value="Sincerely">Sincerely</option>
+                <option value="All The Best">All The Best</option>
+                </select> 
+            <br />
+            <label for="id_senderName"> Name </label
+          ><input
+            type="text"
+            id="id_senderName"
+            name="name_senderName"
+            value=""
+            maxlength="25"
+            size="25"
+          />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
